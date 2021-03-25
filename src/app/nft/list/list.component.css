@@ -1,0 +1,43 @@
+.content {
+  padding: 16px;
+}
+
+.content > mat-card {
+  width: 200px;
+}
+.price label{
+  font-size: 11pt;
+}
+.price label strong{
+  font-size:18pt;
+  padding-top:10px;
+}
+.mat-card-image{
+  max-width:200%;
+  width: 100%;
+  margin: 0px auto;
+}
+.mat-card{
+  border-radius: 39px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 0px;
+  box-shadow: 0px 0px 33px #737373;
+}
+.mat-card-content{
+  padding: 20px 40px 0px;
+}
+.mat-card-actions{
+  padding: 0px 10px;
+}
+.mat-card-content label{
+  font-weight:bold;
+}
+.header-card{
+  margin: 0px;
+  /* padding: 0px; */
+  padding-top: 15px;
+}
+.mat-card-title{
+  font-size:20px;
+}

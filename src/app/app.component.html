@@ -1,0 +1,72 @@
+<div class="row home-header">
+  <div class="col-12 col-md-2">
+    <img class="logo" src="/assets/images/woof-logo.png"/>
+  </div>
+  <div class="col-12 col-sm-4">
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      <a [routerLink]="['/']" class="nav-link w-nav-link active">Home</a>
+      <a [routerLink]="['/nft/']" class="nav-link w-nav-link">NFT's</a>
+      <a [routerLink]="['/donations/']" class="nav-link w-nav-link">Donations</a>
+      <!--<a [routerLink]="['/team/']" class="nav-link w-nav-link">The Team</a>-->
+    </nav>
+  </div>
+  <div class="col-12 col-sm-6">
+    <ul class="tickers">
+      <li class="black" style="padding-left:10px;padding-top: 7px;padding-bottom: 7px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;"><img src="/assets/images/woof-icon-white.png"/></li>
+      <li class="black">
+        <label>Token Supply</label>
+        <span *ngIf="supply$ | async as data">
+               {{ conNumber(data['result'],'total') }}
+        </span>
+      </li>
+      <li class="black">
+        <label>Tokens Burnt</label>
+        <span *ngIf="burned$ | async as data">
+              {{ conNumber(data['result'],'burn') }}
+        </span>
+      </li>
+      <li class="black"  style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;padding-right:15px">
+        <label>Tokens Donated</label>
+        <span *ngIf="charity$ | async as data">
+               {{ conNumber(data['result'],'char')  }}
+        </span>
+      </li>
+      <li style="padding: 0px;margin: 3px 0px 0px 10px;">
+        <button class="btn btn-outline-light">Buy $WOOF</button>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<div class="row footer">
+  <div class="col">
+    <img class="logo" src="/assets/images/woof-logo.png"/>
+  </div>
+  <div class="col">
+    <h3>Explore</h3>
+    <a [routerLink]="['/nft']" class="text-block-19">NFTs</a>
+    <a [routerLink]="['/donations']" class="text-block-19">Charities</a>
+    <a href="#tokenomics" class="text-block-19">Tokenomics</a>
+    <a href="https://app.uniswap.org/#/swap?inputCurrency=0x93b2fff814fcaeffb01406e80b4ecd89ca6a021b" target="_blank" class="text-block-19">Buy</a>
+  </div>
+  <div class="col">
+    <h3>Tech Info</h3>
+    <a href="https://www.dextools.io/app/uniswap/pair-explorer/0x1acba73121d5f63d8ea40bdc64edb594bd88ed09" class="">
+      Etherscan
+    </a>
+    <a href="https://www.dextools.io/app/uniswap/pair-explorer/0x1acba73121d5f63d8ea40bdc64edb594bd88ed09" class="">
+      Dextools
+    </a>
+    <a href="https://www.dextools.io/app/uniswap/pair-explorer/0x1acba73121d5f63d8ea40bdc64edb594bd88ed09" class="">
+      Ethplorer
+    </a>
+  </div>
+  <div class="col social">
+    <h3>Social</h3>
+    <a href="https://www.reddit.com/r/wooffinance/" class="link-block-2 w-inline-block"><img src="assets/images/reddit.png" loading="lazy" width="25" alt="" class="image-4"></a>
+    <a href="https://t.me/wooffinance" class="link-block-2 w-inline-block"><img src="assets/images/telegram-black-circle.png" loading="lazy" width="25" alt="" class="image-6"></a>
+    <a href="https://twitter.com/wooffinance" class="link-block-2 w-inline-block"><img src="assets/images/twitter.png" loading="lazy" width="25" sizes="(max-width: 767px) 25px, (max-width: 991px) 3vw, 25px" srcset="assets/images/twitter.png 500w, assets/images/twitter.png 512w" alt="" class="image twitter"></a>
+  </div>
+</div>

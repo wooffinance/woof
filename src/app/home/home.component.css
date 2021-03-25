@@ -1,0 +1,56 @@
+.container-features{
+  position: absolute;
+  top: -120px;
+  left: 0;
+  right: 0;
+  z-index: 1111;
+}
+.home-header{
+  padding-bottom:40px;
+}
+.feature-points label{
+  font-size: 24pt;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+}
+.feature-points .row{
+  margin-bottom:25px;
+}
+.feature-points span{
+  font-size: 24pt;
+  margin-top:10px;
+  color: #fff;
+  width: 100%;
+}
+.feature-points{
+  text-align:center;
+}
+.tools-icons img{
+  max-width:40px;
+}
+.tools-icons{
+  list-style: none;
+  padding:0px;
+  margin:0px;
+}
+.tools-icons li{
+  float:left;
+  list-style: none;
+}
+h4{
+  font-size: 14pt;
+  font-weight: bold;
+  color: #ff533f;
+}
+h2{
+  font-size: 49pt;
+  line-height: 63pt;
+}
+
+.list-cards .mat-card{
+  border-bottom-right-radius: 29px!important;
+  border-bottom-left-radius: 29px!important;
+}
+.header-card{
+}

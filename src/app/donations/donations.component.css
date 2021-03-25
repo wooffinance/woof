@@ -1,0 +1,6 @@
+.main-charity-holder{
+  width:100%;
+}
+.charity-main-header{
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.48)), url('/assets/images/harleyshounds/lucky.jpg');
+}

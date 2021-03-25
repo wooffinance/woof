@@ -1,0 +1,297 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+  scroll-behavior: smooth;
+}
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
+  position:relative;
+}
+.home-header{
+  margin:0 auto;
+  max-width:1280px;
+}
+.home-header a{
+  text-underline: none;
+}
+.announcement-bar{
+  background: #2aaaae;
+}
+a{
+  text-decoration: none!important;
+
+}
+
+ body {position:relative}
+body {
+  background:#ffffff url(/assets/images/woof-background.png);
+  margin: 0; font-family: "Helvetica Neue", sans-serif; }
+
+.nav-menu a:hover{
+  color:#ffffff;
+}
+img.qrcode{
+  width: 100%;
+}
+.mat-button{
+  background:#ff533f;
+  color:#fff;
+}
+.mat-button:hover{
+  background: #e74b3a;
+  color:#fff;
+}
+.btn-primary{
+  border-color: #ef8a21;
+  background:#ff890d;
+}
+.btn-primary:hover{
+  background:#ff6c28;
+  border-color: #ef8a21;
+}
+.tickers li{
+  list-style-type: none;
+  list-style: none;
+  float: left;
+  /* width: 100%; */
+  padding: 5px;
+  height:45px;
+
+}
+.tickers{
+  padding:0px;
+  margin-top:30px;
+  height:40px;
+}
+.tickers li.black{
+  background: #2b2c2d;
+  color:#fff;
+}
+.tickers span{
+  float: left;
+  clear: both;
+  font-size: 8pt;
+}
+.tickers label{
+  float:left;
+  margin-bottom:0px;
+  clear:both;
+  font-weight:bold;
+}
+.logo{
+  max-width: 165px;
+}
+.nav-link{
+  display: block;
+  float: left;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-weight: bold;
+  margin-top: 40px;
+  font-size: 12pt;
+}
+.nav-menu a:hover{
+  color:#ff533f!important;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 100px;
+}
+.footer .col a{
+  width:100%;
+  float:left;
+  color:#333333;
+  margin-bottom:10px;
+  font-weight:bold;
+}
+.footer .social a{
+  width:auto;
+  margin-right:15px;
+}
+.footer .col h3{
+  font-weight:bold;
+  color: #c3c3c3;
+}
+.footer{
+  padding-top:40px;
+  border-top:1px solid rgb(241, 241, 241);
+  max-width:1280px;
+  margin:40px auto;
+}
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background:#ff6c28;
+  border-color: #ef8a21;
+}
+.telegram-social{
+  margin-right: 15px;
+  background: #333;
+  padding: 10px 10px 15px 7px;
+  border-radius: 31px;
+}
+.twitter-social{
+  margin-right: 15px;
+  background: #ffffff;
+  padding: 11px 7px 15px 11px;
+  border-radius: 31px;
+}
+.reddit-social{
+  margin-right: 15px;
+  background: #ffffff;
+  padding: 11px 8px 15px 10px;
+  border-radius: 31px;
+}
+p{
+  font-weight:bold;
+}
+.tokenomics label{
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.charity-drive-recipients {
+  padding-top: 60px;
+}
+
+
+.body-container {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-charity-holder {
+  width:100%;
+  display: block;
+}
+
+.tokenmoics-header {
+  margin-bottom: 20px;
+}
+.text-block-3 {
+  font-family: Raleway, sans-serif;
+  color: #212121;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 900;
+}
+
+.text-block-3.tokenomics-centre {
+  text-align: center;
+}
+
+.text-block-5 {
+  font-family: Raleway, sans-serif;
+  color: #cfa745;
+  font-weight: 400;
+}
+
+.text-block-5.tokenomics-centre {
+  color: #e29f72;
+  text-align: center;
+}
+
+.div-block-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.charities-progress-container {
+  overflow: hidden;
+  width: 300px;
+  margin-top: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #ccc;
+  border: 2px solid #ff890d;
+}
+.charity-main-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 260px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+.charity-holder-footer {
+  padding: 40px;
+}
+
+.text-block-8 {
+  margin-bottom: 10px;
+  color: #cfa745;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-block-9 {
+  color: #ff890d;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.text-block-10 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.text-block-11 {
+  margin-top: 5px;
+  color: #a8a8a8;
+  font-weight: 600;
+}
+
+.text-block-12 {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid #f5f5f5;
+  color: #cfcfcf;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.text-block-13 {
+  font-weight: 600;
+}
+.charity-main-header img{
+  width:100%;
+}
