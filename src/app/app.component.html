@@ -1,8 +1,8 @@
 <div class="row home-header">
-  <div class="col-12 col-md-2">
+  <div class="col-4 col-sm-2">
     <img class="logo" src="/assets/images/woof-logo-curves.svg"/>
   </div>
-  <div class="col-12 col-sm-4">
+  <div class="col-8 col-sm-5">
     <nav role="navigation" class="nav-menu w-nav-menu">
       <a [routerLink]="['/']" class="nav-link w-nav-link active">Home</a>
       <a [routerLink]="['/nft/']" class="nav-link w-nav-link">NFT's</a>
@@ -10,30 +10,31 @@
       <!--<a [routerLink]="['/team/']" class="nav-link w-nav-link">The Team</a>-->
     </nav>
   </div>
-  <div class="col-12 col-sm-6">
+  <div class="col-12 col-sm-5">
     <ul class="tickers">
       <li class="black" style="padding-left:10px;padding-top: 7px;padding-bottom: 7px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;"><img src="/assets/images/woof-icon-white.png"/></li>
       <li class="black">
         <label>Token Supply</label>
-        <span *ngIf="supply$ | async as data">
+        <!--<span *ngIf="supply$ | async as data">
                {{ conNumber(data['result'],'total') }}
-        </span>
+        </span>-->
+        <span>1 TRILLION</span>
       </li>
       <li class="black">
-        <label>Tokens Burnt</label>
+        <label>Burnt</label>
         <span *ngIf="supply$ | async as data">
                {{ conNumber(data['result'],'burn')  }}
         </span>
       </li>
       <li class="black"  style="border-top-right-radius: 5px;border-bottom-right-radius: 5px;padding-right:15px">
-        <label>Tokens Donated</label>
+        <label>Donated</label>
         <span *ngIf="charity$ | async as data">
                {{ conNumber(data['result'],'char')  }}
         </span>
       </li>
-      <li style="padding: 0px;margin: 3px 0px 0px 10px;">
+     <!-- <li style="padding: 0px;margin: 3px 0px 0px 10px;">
         <a target="_blank" href="https://app.uniswap.org/#/swap?inputCurrency=0x6c2E5dFA3392DeBe43D8B2cB49B085CD1fDb3fCC" class="btn btn-outline-light buy-woof-top btn-block">Buy $WOOF</a>
-      </li>
+      </li>-->
     </ul>
   </div>
 </div>
