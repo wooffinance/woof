@@ -4,6 +4,7 @@ import {map} from 'rxjs/operators';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
 import {MatAccordion} from '@angular/material/expansion';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,9 +18,6 @@ export class AppComponent implements OnInit, OnDestroy {
   public isMobile: boolean = false;
   ticker: Ticker;
   supply$ = this.tickerService.supply$.pipe(
-    map(ticker => ticker)
-  );
-  burned$ = this.tickerService.burned$.pipe(
     map(ticker => ticker)
   );
   charity$ = this.tickerService.charity$.pipe(
@@ -36,7 +34,6 @@ export class AppComponent implements OnInit, OnDestroy {
     });
     this.supply$.subscribe();
     this.charity$.subscribe();
-    this.burned$.subscribe();
 
   }
 
@@ -51,28 +48,15 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   conNumber(number,type){
-    var connum = 0;
-    if(type === 'burn'){
-      connum = this.prevBurn;
-    }
-    if(type === 'char'){
-      connum = this.prevCharity;
-    }
-    if(type === 'total'){
-      connum = this.prevSupply;
-    }
-    if(number >= 0) {
+
       if(type === 'burn'){
-        this.prevBurn = number;
+        return (1000000000000 - (number/1000000000000000000)).toLocaleString();
       }
       if(type === 'char'){
-        this.prevCharity = number;
+        return number ;
       }
       if(type === 'total'){
-        this.prevSupply = number;
+        return (number/1000000000000000000).toLocaleString();
       }
-      return parseFloat(number);
-    }
-    return connum;
   }
 }

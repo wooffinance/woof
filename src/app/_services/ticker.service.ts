@@ -33,11 +33,9 @@ export interface Ticker {
 })
 export class TickerService {
   private supply: Subscription;
-  private burned: Subscription;
   private charity: Subscription;
 
   supply$ = new BehaviorSubject<Ticker>(undefined);
-  burned$ = new BehaviorSubject<Ticker>(undefined);
   charity$ = new BehaviorSubject<Ticker>(undefined);
 
   constructor(
@@ -47,12 +45,8 @@ export class TickerService {
   // tslint:disable-next-line:typedef
   subscribe(ticker) {
     this.supply = interval(5000).pipe(
-      switchMap(() => this.http.get<Ticker>(`https://api.etherscan.io/api?module=stats&action=tokensupply&contractaddress=0x57d90b64a1a57749b0f932f1a3395792e12e7055&apikey=CAHI5VFJ3HY2V1HWCHUHJJ3CVGQ9PIY71Z`))
+      switchMap(() => this.http.get<Ticker>(`https://api.etherscan.io/api?module=stats&action=tokensupply&contractaddress=0x6c2E5dFA3392DeBe43D8B2cB49B085CD1fDb3fCC&apikey=CAHI5VFJ3HY2V1HWCHUHJJ3CVGQ9PIY71Z`))
     ).subscribe(this.supply$);
-
-    this.burned = interval(5000).pipe(
-        switchMap(() => this.http.get<Ticker>(`https://api.etherscan.io/api?module=stats&action=tokensupply&contractaddress=0x57d90b64a1a57749b0f932f1a3395792e12e7055&apikey=CAHI5VFJ3HY2V1HWCHUHJJ3CVGQ9PIY71Z`))
-      ).subscribe(this.burned$);
 
     this.charity = interval(5000).pipe(
         switchMap(() => this.http.get<Ticker>(`https://api.etherscan.io/api?module=stats&action=tokensupply&contractaddress=0xd9e9Ea5248D86381a5AE5A27d1c0f20A36e59190&apikey=CAHI5VFJ3HY2V1HWCHUHJJ3CVGQ9PIY71Z`))
