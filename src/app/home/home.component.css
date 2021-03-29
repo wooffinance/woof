@@ -57,6 +57,9 @@ h2{
 }
 .header-card{
 }
-
+.header-section h2{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+}
 /*typography*/
 p {font-size: 1.3rem; font-weight: normal; line-height: 1.6em;}

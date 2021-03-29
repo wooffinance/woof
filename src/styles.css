@@ -47,6 +47,14 @@ img.qrcode{
   background: #e74b3a;
   color:#fff;
 }
+.alert-info{
+  color: #ffffff;
+  background-color: #ff890e61;
+  font-weight: 100;
+  border-color: #e64b39;
+}
+.alert-info p{
+}
 .btn-primary{
   border-color: #ef8a21;
   background:#ff890d;
@@ -89,13 +97,20 @@ img.qrcode{
   max-width: 105px;
   margin: 1em 0 0 0;
 }
+nav{
+  background: #fff;
+  float: left;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
 .nav-link{
   display: block;
   float: left;
   padding: 0.5rem 1rem;
   color: #000;
   font-weight: bold;
-  margin-top: 40px;
   font-size: 12pt;
 }
 .nav-menu a:hover{
@@ -287,7 +302,9 @@ z
   border: 4px solid;
   margin-top: -2px;
 }
-
+.alert-info p{
+  font-size: 12pt;
+}
 .mat-expansion-panel {box-shadow: none!important;}
 .mat-expansion-panel-header-title { font-weight: bold;}
 .mat-expansion-panel-header-description {}
@@ -308,7 +325,7 @@ z
 
   .nav-link {padding: 0.5rem!important;}
   .charities-progress-container {position: relative; margin: 0; bottom:0; left: 5%;}
-  .tickers {margin-top: 50vw;}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

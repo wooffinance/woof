@@ -4,3 +4,11 @@
 .charity-main-header{
   background-image: radial-gradient(circle farthest-corner at 50% 50%, rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.48)), url('/assets/images/harleyshounds/lucky.jpg');
 }
+.btn-etherscan{
+  background: none;
+  color: #ff890d;
+  padding: 0px;
+  text-align: left;
+  border: 0px;
+  font-weight: bold;
+}

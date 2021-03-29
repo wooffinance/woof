@@ -1,0 +1,15 @@
+.liquidity img{
+  max-width: 150px;
+  margin-bottom: 40px;
+}
+.liquidity .col-sm-4{
+  padding:0px 60px;
+  margin-bottom: 40px;
+}
+.liquidity h3{
+  font-weight: bold;
+  font-size: 16pt;
+}
+.liquidity p{
+  font-weight:normal;
+}

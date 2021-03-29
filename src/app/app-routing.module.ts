@@ -8,6 +8,7 @@ import {ListComponent} from './nft/list/list.component';
 import {ManageComponent} from './nft/manage/manage.component';
 import {DonationsComponent} from './donations/donations.component';
 import {TeamComponent} from './team/team.component';
+import {LiquidityComponent} from './liquidity/liquidity.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'coming-soon', component: ComingSoonComponent },
   { path: 'donations', component: DonationsComponent },
   { path: 'team', component: TeamComponent },
+  { path: 'liquidity-locked', component: LiquidityComponent },
   { path: 'exchange', component: DashboardComponent,
     children: [
       { path: '', component: DashboardComponent },

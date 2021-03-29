@@ -31,7 +31,6 @@ a, a:hover {
 }
 .profile-card {
   width: 100%;
-  min-height: 365px;
   margin: auto;
   background: #fff;
   border-radius: 12px;
@@ -56,11 +55,9 @@ a, a:hover {
   margin-left: auto;
   margin-right: auto;
   transform: translateY(-50%);
-  border-radius: 50%;
   overflow: hidden;
   position: relative;
   z-index: 4;
-  box-shadow: 0px 5px 50px 0px #f14f3c, 0px 0px 0px 7px rgb(255 138 13);
 }
 @media screen and (max-width: 576px) {
   .profile-card__img {
@@ -84,14 +81,14 @@ a, a:hover {
 }
 .profile-card__name {
   font-weight: 700;
+  color: #212529;
   font-size: 24px;
-  color: #ff593a;
   margin-bottom: 15px;
 }
 .profile-card__txt {
   font-size: 18px;
   font-weight: 500;
-  color: #324e63;
+  color: #ff593a;
   margin-bottom: 15px;
 }
 .profile-card__txt strong {

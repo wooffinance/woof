@@ -19,6 +19,7 @@ import { DonationsComponent } from './donations/donations.component';
 import { TeamComponent } from './team/team.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { LiquidityComponent } from './liquidity/liquidity.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     ManageComponent,
     ListComponent,
     DonationsComponent,
-    TeamComponent
+    TeamComponent,
+    LiquidityComponent
   ],
   imports: [
     BrowserModule,
