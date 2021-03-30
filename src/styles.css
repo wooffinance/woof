@@ -29,13 +29,14 @@ a{
 }
 
 body {position:relative}
+
+html { height:100%!important; background:#fff  url(/assets/images/bg-pattern.png) top center repeat-y;}
+
 body {
-  background-color: #ffffff ;
-  background-image:url(/assets/images/head-nfts.png), url(/assets/images/bg-pattern.png) ;
-  background-position:top center, top center  ;
-  background-repeat:no-repeat, repeat-y;
+  background: url(/assets/images/head-nfts.png) top center no-repeat;
   margin: 0; font-family: "Helvetica Neue", sans-serif;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .nav-menu a:hover{
@@ -169,11 +170,7 @@ nav{
 p{
   font-weight:bold;
 }
-.tokenomics label{
-  font-size: 18pt;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
+
 
 .charity-drive-recipients {
   padding-top: 60px;
@@ -273,7 +270,7 @@ z
 }
 
 .text-block-10 {
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 10px;
 }
@@ -316,7 +313,10 @@ z
 .alert-info p{
   font-size: 12pt;
 }
+
+/*FAQ*/
 .mat-expansion-panel {box-shadow: none!important;}
+.mat-expansion-panel-header {}
 .mat-expansion-panel-header-title { font-weight: 500; font-size: 1.2rem; padding: 1rem 0!important;}
 .mat-expansion-panel-header-description {}
 
@@ -337,34 +337,52 @@ z
 
 /*Navbar styles*/
 .navbar {position: fixed;}
-.navbar-dark .navbar-toggler {background: rgba(0, 0, 0, 0.5);}
+.navbar-dark .navbar-toggler {background: none; border: none; color:#e7e7e7!important; font-size: 2rem; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);}
 .navbar-dark .navbar-nav .nav-link {color: #000;}
-.navbar-collapse.collapsing, .navbar-collapse.show {background: rgba(255, 255, 255, 0.9); border-radius: 10px; padding:1rem; box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.5);}
-
+.navbar-collapse.collapsing, .navbar-collapse.show {background: rgba(255, 255, 255, 0.5); border-radius: 10px; padding:1rem; box-shadow: 0px 10px 20px -12px rgba(0, 0, 0, 0.); backdrop-filter: blur(5px);}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {color: #ff6c28;}
+.navbar-text {margin: 0;}
+.navbar-text .unibtn {margin: 0; display: block;}
+.navbar-dark .navbar-toggler-icon {  color:red!important; }
 
 /*Liquidity*/
+#liquidity {margin-top: 150px;}
 .liquidity h4 {color: #ff890d; margin-top:-1rem;}
 .liquidity p {font-size:1.1rem; line-height: 1.7rem;}
 .liquidity .btn-block {border:none!important;font-weight: 700;}
+
+/*Tokenomics*/
+.tokenomics img {width: 100px; display: block; margin: 2rem auto;}
+.tokenomics label{font-size: 1.2rem;font-weight: bold; margin-bottom: 20px; line-height: 1.2em;}
+/*.tokenomics p { font-weight: 100!important; font-size: 1.2rem!important;}*/
+
+
+/*Team*/
+#theteam {margin-top: 150px;}
 
 /*Links*/
 .tools-icons a {display:inline-block;color: #000!important; font-size: 1.5rem; padding:1rem;}
 .tools-icons a:hover {color: #ff533f!important;}
 
+/*Footer*/
 
-/*Responsive stuff*/
+.minifoot {text-align: center; padding-top:1rem;}
+.minifoot p {font-weight: normal; display: inline-block; margin-top: 1rem; opacity: .6; text-align: center;}
+
+/*---------Responsive stuff*/
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-
 .container {margin-top: 450px;}
-  body{
-    background-size: 300%;
+body{background-size: 300%;}
+.nav-link {padding: 0.5rem!important;}
+.charities-progress-container {position: relative; margin: 0; bottom:0; left: 5%;}
 
-  }
+h2 {font-size: 2rem!important ;font-weight: bolder;line-height: 2.5rem!important;}
+h4 {margin-bottom: 0!important;}
 
-  .nav-link {padding: 0.5rem!important;}
-  .charities-progress-container {position: relative; margin: 0; bottom:0; left: 5%;}
+.mat-expansion-panel-header {padding: 2rem 1rem 2rem 0rem!important;}
 
 }
 
