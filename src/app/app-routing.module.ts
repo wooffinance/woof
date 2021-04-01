@@ -9,6 +9,9 @@ import {ManageComponent} from './nft/manage/manage.component';
 import {DonationsComponent} from './donations/donations.component';
 import {TeamComponent} from './team/team.component';
 import {LiquidityComponent} from './liquidity/liquidity.component';
+import {VetBillsListComponent} from './vetbills/list/list.component';
+import {AddComponent} from './vetbills/add/add.component';
+import {ViewComponent} from './vetbills/view/view.component';
 
 
 const routes: Routes = [
@@ -17,6 +20,13 @@ const routes: Routes = [
   { path: 'donations', component: DonationsComponent },
   { path: 'team', component: TeamComponent },
   { path: 'liquidity-locked', component: LiquidityComponent },
+  { path: 'in-need', component: VetBillsListComponent,
+    children: [
+      { path: '', component: VetBillsListComponent },
+      { path: ':id/:name', component: ViewComponent },
+      { path: 'new', component: AddComponent }
+    ]
+  },
   { path: 'exchange', component: DashboardComponent,
     children: [
       { path: '', component: DashboardComponent },

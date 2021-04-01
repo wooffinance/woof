@@ -20,6 +20,8 @@ import { TeamComponent } from './team/team.component';
 import {HttpClientModule} from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LiquidityComponent } from './liquidity/liquidity.component';
+import { AddComponent } from './vetbills/add/add.component';
+import { ViewComponent } from './vetbills/view/view.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +34,9 @@ import { LiquidityComponent } from './liquidity/liquidity.component';
     ListComponent,
     DonationsComponent,
     TeamComponent,
-    LiquidityComponent
+    LiquidityComponent,
+    AddComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,

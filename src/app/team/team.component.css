@@ -50,8 +50,8 @@ a, a:hover {
   transition-delay: 0.1s;
 }
 .profile-card__img {
-  width: 150px;
-  height: 150px;
+  width: 202px;
+  height: 183px;
   margin-left: auto;
   margin-right: auto;
   transform: translateY(-50%);
