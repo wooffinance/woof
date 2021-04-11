@@ -384,6 +384,9 @@ h4 {margin-bottom: 0!important;}
 
 .mat-expansion-panel-header {padding: 2rem 1rem 2rem 0rem!important;}
 
+.profile-card__img{width: 400px!important; height: 400px!important;}
+.profile-card__cnt {margin-top: -240px!important; padding-bottom: 240px; transition: all 0.3s;}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
