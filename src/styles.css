@@ -321,7 +321,7 @@ z
 .mat-expansion-panel-header-description {}
 
 .btn {padding: 1em;}
-.unibtn {display: block; clear: both; float:none; width: 200px; margin-top:2em; background: #FF025E; border: none;}
+.unibtn {display: block; clear: both; float:none; /* width: 200px;*/ margin-top:2em; background: #FF025E; border: none;}
 .tickers{
   float:right;
 }
@@ -355,6 +355,14 @@ z
 .tokenomics img {width: 100px; display: block; margin: 2rem auto;}
 .tokenomics label{font-size: 1.2rem;font-weight: bold; margin-bottom: 20px; line-height: 1.2em;}
 /*.tokenomics p { font-weight: 100!important; font-size: 1.2rem!important;}*/
+
+/*Roadmap*/
+.roadmap {margin-top: 100px;}
+.roadmap h2, .roadmap h4 {text-align: center;}
+.roadmap h3 {font-weight: bold; font-size: 2rem; font-weight: 100; opacity: .3; margin-top: 2rem;}
+.roadmap ul {margin:2rem 0 2rem; padding: 0;}
+.roadmap li {font-size: 1.15rem; line-height: 1.8rem; list-style-position: inside;}
+.roadmap li.complete { color: #82BB1B!important;}
 
 
 /*Team*/
